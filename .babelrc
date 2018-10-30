@@ -1,0 +1,40 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "browsers": ["chrome 66", "edge 17", "firefox 60", "safari 11"]
+            }
+          }
+        ],
+        "@babel/preset-react"
+      ],
+      "plugins": [
+        "react-hot-loader/babel",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions", "ie >= 11"]
+            }
+          }
+        ],
+        "@babel/preset-react"
+      ],
+      "plugins": [
+        "react-hot-loader/babel",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties"
+      ]
+    }
+  }
+}
